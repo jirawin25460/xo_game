@@ -1,0 +1,114 @@
+.replay-container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a2d0a, #001200);
+  color: #ffd700;
+  font-family: 'Pirata One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.replay-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 2px 2px 10px #000, 0 0 15px #ffcc00;
+}
+
+.replay-content {
+  display: flex;
+  flex-direction: column; /* GameBoard ขึ้นบน ตาราง moves ลงล่าง */
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.replay-board-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.replay-controls-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.replay-buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.replay-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #ffd700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #bb9900, #ffd700);
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 0 10px #ffd700;
+  transition: all 0.3s ease;
+}
+
+.replay-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.7), 0 0 20px #ffdd33;
+}
+
+.replay-button.small {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.replay-button.back-home {
+  width: 100%;
+}
+
+.replay-moves-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.replay-moves-table th,
+.replay-moves-table td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid #ffd700;
+  color: #ffd700;
+  background-color: rgba(0, 30, 0, 0.5);
+}
+
+.replay-moves-table th {
+  background-color: #003300;
+}
+
+.replay-move-even {
+  background-color: rgba(0, 50, 0, 0.5);
+}
+
+.replay-move-odd {
+  background-color: rgba(0, 30, 0, 0.5);
+}
+
+.replay-move-highlight {
+  background-color: rgba(255, 215, 0, 0.4);
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px 2px #000;
+}
+
