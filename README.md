@@ -27,20 +27,20 @@ FLUSH PRIVILEGES;
 
 ตรวจสอบ `application.properties` แล้วรัน:
 
-`
+```
 mvn clean install  
 mvn spring-boot:run
-`
+```
 
 Backend จะรันที่: http://localhost:8080
 
 ### 4. Run Frontend
 
-`
+```
 cd xogame_frontend  
 npm install  
 npm start
-`
+```
 
 Frontend จะรันที่: http://localhost:3000
 
